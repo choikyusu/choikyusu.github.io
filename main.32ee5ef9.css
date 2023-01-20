@@ -318,4 +318,57 @@ ul > li:before {
   display: block;
   margin-bottom: 1.5rem;
 }
+
+@media print {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 1rem 0 1rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  ul > li,
+  p {
+    font-size: 0.7rem;
+  }
+
+  .other,
+  .row {
+    padding: 0.5rem 0;
+  }
+
+  .project {
+    padding: 0.2rem 0;
+  }
+
+  .li {
+    page-break-before: auto;
+    page-break-after: auto;
+  }
+
+  .description {
+    page-break-before: auto;
+    page-break-after: auto;
+  }
+
+  body:before {
+    display: none !important;
+  }
+
+  section {
+    padding: 0 0 0 0;
+  }
+}
+
 /*# sourceMappingURL=/resume/main.32ee5ef9.css.map */
